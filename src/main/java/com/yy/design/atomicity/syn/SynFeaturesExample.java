@@ -5,19 +5,29 @@ package com.yy.design.atomicity.syn;
  * @date 2020/7/21 22:08
  */
 public class SynFeaturesExample {
-    long v1=0L;
+    private static long v1 = 0L;
 
-    public synchronized long getV1() {
+    public static synchronized long getV1() {
         return v1;
     }
 
-    public void getAndIncrement(){
+    public static void getAndIncrement() {
 
-        long temp=getV1();
-        temp+=1L;
+        long temp = getV1();
+        temp += 1L;
         setV1(temp);
     }
-    public synchronized void setV1(long i) {
-        v1=1;
+
+    public static synchronized void setV1(long i) {
+        v1 = i;
+    }
+
+    public static void main(String[] args) {
+        for (int i = 0; i < 100; i++) {
+            new Thread(() -> {
+                getAndIncrement();
+                System.out.println(Thread.currentThread().getName() + "---" +getV1());
+            }).start();
+        }
     }
 }

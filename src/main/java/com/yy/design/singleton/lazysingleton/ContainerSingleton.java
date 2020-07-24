@@ -1,4 +1,4 @@
-package com.yy.design.lazysingleton;
+package com.yy.design.singleton.lazysingleton;
 
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
@@ -7,7 +7,7 @@ public class ContainerSingleton {
     private ContainerSingleton(){
 
     }
-    private static Map<String,Object> ioc=new ConcurrentHashMap<>();
+    private static final Map<String,Object> ioc=new ConcurrentHashMap<>();
     public static Object getBean(String className){
         synchronized (ioc){
             if (!ioc.containsKey(className)){

@@ -1,4 +1,4 @@
-package com.yy.design.hungrysingleton;
+package com.yy.design.singleton.hungrysingleton;
 
 public class HungrySingleton {
     //static修饰成员变量，是为了保证类初始化就为其变量分配内存（分配内存区域方法区），fianl只允许此变量被赋值一次。

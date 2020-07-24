@@ -1,13 +1,8 @@
-package com.yy.design.lazysingleton;
+package com.yy.design.singleton.lazysingleton;
 
 public class ThreadLocalSingleton {
     private static final ThreadLocal<ThreadLocalSingleton> THREAD_LOCAL_SINGLETON_THREAD_LOCAL=
-            new ThreadLocal<ThreadLocalSingleton>(){
-                @Override
-                protected ThreadLocalSingleton initialValue() {
-                    return new ThreadLocalSingleton();
-                }
-            };
+            ThreadLocal.withInitial(ThreadLocalSingleton::new);
     private ThreadLocalSingleton(){
 
     }

@@ -1,4 +1,4 @@
-package com.yy.design.hungrysingleton;
+package com.yy.design.singleton.hungrysingleton;
 
 public class Singleton {
 

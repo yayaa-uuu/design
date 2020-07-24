@@ -1,4 +1,4 @@
-package com.yy.design.lazysingleton;
+package com.yy.design.singleton.lazysingleton;
 
 public enum  EnumSingleton {
     SINGLETON;

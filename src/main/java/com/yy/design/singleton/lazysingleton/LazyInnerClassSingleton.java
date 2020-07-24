@@ -1,4 +1,4 @@
-package com.yy.design.lazysingleton;
+package com.yy.design.singleton.lazysingleton;
 //饿汉单例会有内存浪费的问题，synchronized会照成性能问题
 public class LazyInnerClassSingleton {
     //使用LazyInnerClassSingleton时会默认先初始化内部类

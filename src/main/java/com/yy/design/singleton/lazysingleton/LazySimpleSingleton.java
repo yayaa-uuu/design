@@ -1,4 +1,4 @@
-package com.yy.design.lazysingleton;
+package com.yy.design.singleton.lazysingleton;
 //在需要时才实例化
 public class LazySimpleSingleton {
     private LazySimpleSingleton(){

@@ -1,4 +1,4 @@
-package com.yy.design.producer;
+package com.yy.design.concurrent.producer;
 
 import java.util.Vector;
 import java.util.concurrent.ExecutorService;

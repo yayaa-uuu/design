@@ -2,8 +2,6 @@ package com.willing.juc;
 
 import lombok.extern.slf4j.Slf4j;
 
-import java.util.concurrent.locks.ReentrantLock;
-
 @Slf4j
 public class InterruptedTest {
     public static void main(String[] args) {

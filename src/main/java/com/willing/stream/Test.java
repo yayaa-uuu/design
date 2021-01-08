@@ -5,7 +5,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 public class Test {
-    static class Person{
+    static class Person {
         private String name;
         private int age;
 
@@ -33,10 +33,11 @@ public class Test {
             this.age = age;
         }
     }
+
     public static void main(String[] args) {
-        String s="asb";
-        String b=null;
-        System.out.println(s+b);
+        String s = "asb";
+        String b = null;
+        System.out.println(s + b);
         List<Person> list = new ArrayList<>();
         list.add(new Person("yy", 21));
         list.add(new Person("tom", 22));

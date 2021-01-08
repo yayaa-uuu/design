@@ -9,9 +9,9 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.yy</groupId>
-    <artifactId>design</artifactId>
+    <artifactId>willing</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>design</name>
+    <name>willing</name>
     <description>Demo project for Spring Boot</description>
 
     <properties>
@@ -54,6 +54,22 @@
             <artifactId>lombok</artifactId>
             <version>1.18.4</version>
         </dependency>
+
+        <dependency>
+            <groupId>io.netty</groupId>
+            <artifactId>netty-all</artifactId>
+            <version>4.1.49.Final</version>
+        </dependency>
+        <dependency>
+            <groupId>org.scala-sbt</groupId>
+            <artifactId>test-interface</artifactId>
+            <version>1.0</version>
+        </dependency>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+        </dependency>
+
     </dependencies>
 
     <build>
